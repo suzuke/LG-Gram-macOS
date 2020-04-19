@@ -19,7 +19,7 @@
 				<key>AddMCHC</key>
 				<false/>
 				<key>AddPNLF</key>
-				<true/>
+				<false/>
 				<key>FixADP1</key>
 				<false/>
 				<key>FixRTC</key>
@@ -33,31 +33,63 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
+					<string>change _Q50 to XQ50</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
+					<data>X1E1MAA=</data>
 					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
+					<data>WFE1MAA=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename H_EC to EC (USB Power)</string>
+					<string>change _Q51 to XQ51</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SF9FQw==
-					</data>
+					<data>X1E1MQA=</data>
 					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
+					<data>WFE1MQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Set Mute 0x01 to 0x00</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>AUJBVE0B</data>
+					<key>Replace</key>
+					<data>AUJBVE0A</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>XBIF to YBIF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>WEJJRgA=</data>
+					<key>Replace</key>
+					<data>WUJJRgA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>XBIX to YBIX</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>WEJJWAA=</data>
+					<key>Replace</key>
+					<data>WUJJWAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>XBST to YBST</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>WEJTVAA=</data>
+					<key>Replace</key>
+					<data>WUJTVAA=</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -80,14 +112,14 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>gfxrst=1 darkwake=0 dart=0</string>
+		<string>gfxrst=1 darkwake=0 dart=0 applbkl=0</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
@@ -97,7 +129,7 @@
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>RtcHibernateAware</key>
@@ -151,47 +183,27 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAWWQ==
-				</data>
+				<data>AAAWWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device-id</key>
-				<data>
-				FlkAAA==
-				</data>
+				<data>FlkAAA==</data>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-type</key>
-				<data>
-				AAQAAA==
-				</data>
+				<data>AAQAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -297,15 +309,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
+				<data>igKEwHRE</data>
 				<key>MatchOS</key>
 				<string>10.13.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -313,15 +321,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>KernelXCPM</key>
@@ -334,17 +338,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
